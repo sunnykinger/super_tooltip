@@ -4,7 +4,9 @@ import "dart:ui" as ui;
 import 'package:flutter/material.dart';
 
 enum TooltipDirection { up, down, left, right }
+
 enum ShowCloseButton { inside, outside, none }
+
 enum ClipAreaShape { oval, rectangle }
 
 typedef OutSideTapHandler = void Function();
@@ -275,7 +277,7 @@ class SuperTooltip {
           builder: (context) => _AnimationWrapper(
                 builder: (context, opacity) => AnimatedOpacity(
                   opacity: opacity,
-                  duration: const Duration(milliseconds: 600),
+                  duration: const Duration(milliseconds: 300),
                   child: background,
                 ),
               ));
@@ -323,7 +325,7 @@ class SuperTooltip {
         builder: (context) => _AnimationWrapper(
               builder: (context, opacity) => AnimatedOpacity(
                 duration: Duration(
-                  milliseconds: 300,
+                  milliseconds: 150,
                 ),
                 opacity: opacity,
                 child: Center(
