@@ -277,7 +277,7 @@ class SuperTooltip {
           builder: (context) => _AnimationWrapper(
                 builder: (context, opacity) => AnimatedOpacity(
                   opacity: opacity,
-                  duration: const Duration(milliseconds: 300),
+                  duration: const Duration(milliseconds: 200),
                   child: background,
                 ),
               ));
@@ -325,7 +325,7 @@ class SuperTooltip {
         builder: (context) => _AnimationWrapper(
               builder: (context, opacity) => AnimatedOpacity(
                 duration: Duration(
-                  milliseconds: 150,
+                  milliseconds: 100,
                 ),
                 opacity: opacity,
                 child: Center(
